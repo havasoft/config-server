@@ -1,0 +1,22 @@
+ribbon:
+   ConnectTimeout: 600000
+   ReadTimeout: 600000
+zuul:
+   sslHostnameValidationEnabled: false
+   ignored-services: '*'
+   routes:
+      data-transfer:
+         path: /data-transfer/**
+         service-id: fas-data-transfer-service
+         strip-prefix: true
+      management:
+         path: /management/**
+         service-id: fas-management-service
+         strip-prefix: true
+      device:
+         path: /device/**
+         service-id: fas-device-service
+         strip-prefix: false
+setting:
+   useGateway: true
+   logLevel: WARN
