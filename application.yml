@@ -4,9 +4,9 @@ spring:
       config:
          fail-fast: true
    datasource:
-      url: jdbc:sqlserver://azugessqlpreviewsea.database.windows.net:1433;databaseName=fm-azure-sqldb
-      username: u6cd867ee2bc
-      password: 'J5COKEWuoInq7wLbgTNW/ltLo5RdSQKHLDEIsC7yZOvm+PAhHGf5KQ=='
+      url: jdbc:sqlserver://thanght.database.windows.net:1433;databaseName=FAS_DEV
+      username: thanght
+      password: @Gcsvn123
       driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
    jpa:
       show-sql: false
@@ -23,7 +23,7 @@ eureka:
       fetchRegistry: true
       registryFetchIntervalSeconds: 5
       serviceUrl:
-         defaultZone: https://fas-discovery-service.apps.sea.preview.pcf.manulife.com/eureka/
+         defaultZone: https://fas-discovery-service.cfapps.io/eureka/
    instance:
       leaseRenewalIntervalInSeconds: 30
       prefer-ip-address: false
