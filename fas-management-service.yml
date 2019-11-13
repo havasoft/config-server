@@ -6,7 +6,7 @@ spring:
    datasource:
       url: jdbc:sqlserver://thanght.database.windows.net:1433;databaseName=FAS_DEV
       username: thanght
-      password: @Gcsvn123
+      password: "@Gcsvn123"
       driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
    jpa:
       show-sql: false
