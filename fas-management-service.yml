@@ -22,8 +22,8 @@ eureka:
       registerWithEureka: true
       fetchRegistry: true
       registryFetchIntervalSeconds: 5
-      serviceUrl:
-         defaultZone: https://fas-discovery-service.cfapps.io/eureka/
+      #serviceUrl:
+      #   defaultZone: https://fas-discovery-service.cfapps.io/eureka/
    instance:
       leaseRenewalIntervalInSeconds: 30
       prefer-ip-address: false
